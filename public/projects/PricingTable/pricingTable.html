@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="../../../style.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: "Nunito Sans", sans-serif;; 
+        background-color: whitesmoke;
+      }
+
+      .pricing-container{
+        display: flex;
+        gap: 50px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pricing-container > div{
+        flex: 1;
+        max-width: 200px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .pricing-plan{
+        background-color: white;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        max-height: 347px;
+      }
+
+      .plan-title{
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-top: 15px;
+      }
+
+      .pricing-container hr{
+        margin: 5px;
+        border: 1px solid white;
+      }
+
+      .plan-title > div{
+        color: white;
+        font-weight: normal;
+        font-size: 8px;
+        padding: 10px;
+      }
+
+      .first{
+        background: rgb(255,231,8);
+        background: linear-gradient(153deg, rgba(255,231,8,1) 0%, rgba(255,0,0,1) 100%);
+      }
+
+      .second{
+        background: rgb(165,236,255);
+        background: linear-gradient(153deg, rgba(165,236,255,1) 0%, rgba(41,61,116,1) 52%);
+      }
+
+      .third{
+        background: rgb(255,249,178);
+        background: linear-gradient(153deg, rgba(255,249,178,1) 0%, rgba(35,141,166,1) 100%);
+      }
+
+      .plan-price{
+        font-weight: 900;
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      sub, sup{
+        font-weight: 300;
+        font-size: 30px;
+      }
+
+      .plan-features{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+
+      li{
+        margin-bottom: 20px;
+      }
+
+      button{
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 70px;
+      }
+
+      .plan-buttonB{
+        background: rgb(255,231,8);
+        background: linear-gradient(153deg, rgba(255,231,8,1) 0%, rgba(255,0,0,1) 100%);
+      }
+
+      .plan-buttonS{
+        background: rgb(165,236,255);
+        background: linear-gradient(153deg, rgba(165,236,255,1) 0%, rgba(41,61,116,1) 52%);
+        margin-bottom: 48px;
+      }
+
+      .plan-buttonP{
+        background: rgb(255,249,178);
+        background: linear-gradient(153deg, rgba(255,249,178,1) 0%, rgba(35,141,166,1) 100%);
+      }
+
+      @media (max-width: 1250px) {
+        .pricing-container{
+          flex-direction: column;
+          height: 80vh;
+          margin: 130px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="nav-bar">
+      <div class="nav-bar-container">
+          <p>&lt/&gt</p>
+          <div>
+            <a href="../../../index.html">Home</p>
+            <a href="../../../index.html#CV" class="display-none">CV</a>
+            <a href="../../projects.html" class="display-none">Projects</a>
+          </div>
+      </div>
+    </section>
+
+    <div class="pricing-container">
+      <div>
+        <div class="plan-title first">BASIC
+          <hr>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac est id.</div>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-price"><sup>$</sup>20<sub>/mo</sub></div>
+          <ul class="plan-features">
+            <li>✅ 10GB Storage</li>
+            <li>✅ 1 User</li>
+            <li>🚫 Support</li>
+          </ul>
+          <button class="plan-buttonB">Sign Up</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="plan-title second">STANDARD
+          <hr>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac est id.</div>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-price"><sup>$</sup>35<sub>/mo</sub></div>
+          <ul class="plan-features">
+            <li>✅ 50GB Storage</li>
+            <li>✅ 5 Users</li>
+            <li>✅ Phone &amp; Email Support</li>
+          </ul>
+          <button class="plan-buttonS">Sign Up</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="plan-title third">PREMIUM
+          <hr>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac est id.</div>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-price"><sup>$</sup>50<sub>/mo</sub></div>
+          <ul class="plan-features">
+            <li>✅ 100GB Storage</li>
+            <li>✅ 10 Users</li>
+            <li>✅ 24/7 Support</li>
+          </ul>
+          <button class="plan-buttonP">Sign Up</button>
+        </div>
+      </div>
+
+    </div>
+
+    <section id="footer">
+      <div class="footer-container">
+          <p class="display-none">CONTACT ME</p>
+          <a href="https://github.com/EnzoTavares" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/enzo-tavares-23set/" target="_blank">LinkedIn</a>
+          <a href="mailto:enzotavares2309@gmail.com" target="_blank">Email</a>
+          <hr class="footer-hr">
+          <p>Copyright © Enzo Tavares. All Rights Reserved.</p>
+      </div>
+    </section>
+  </body>
+</html>

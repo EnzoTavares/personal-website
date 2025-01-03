@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <link href="../../../style.css" rel="stylesheet">
+  <style>
+    body{
+      margin: 0;
+    }
+    
+    .flex-container{
+      display: flex;
+      height: 100vh;
+      align-items: center;
+    }
+
+    .grid-container{
+      display: grid;
+      width: 748px;
+      height: 756px;
+      grid-template: 414px 140px 155px 20px / 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: #000;
+      margin: auto;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+  
+    .white1{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .white2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .white3{
+      background-color: #F0F1EC;
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .white4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .white5{
+      background-color: #F0F1EC;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="nav-bar">
+    <div class="nav-bar-container">
+        <p>&lt/&gt</p>
+        <div>
+          <a href="../../../index.html">Home</p>
+          <a href="../../../index.html#CV" class="display-none">CV</a>
+          <a href="../../projects.html" class="display-none">Projects</a>
+        </div>
+    </div>
+  </section>
+
+  <div class="flex-container">
+    <div class="grid-container">
+      <div class="red"></div>
+      <div class="white1"></div>
+      <div class="white2"></div>
+      <div class="white3"></div>
+      <div class="blue"></div>
+      <div class="white4"></div>
+      <div class="white5"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+  </div>
+
+  <section id="footer">
+    <div class="footer-container">
+        <p class="display-none">CONTACT ME</p>
+        <a href="https://github.com/EnzoTavares" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/enzo-tavares-23set/" target="_blank">LinkedIn</a>
+        <a href="mailto:enzotavares2309@gmail.com" target="_blank">Email</a>
+        <hr class="footer-hr">
+        <p>Copyright © Enzo Tavares. All Rights Reserved.</p>
+    </div>
+  </section>
+</body>
+
+</html>

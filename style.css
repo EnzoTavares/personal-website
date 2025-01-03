@@ -1,0 +1,627 @@
+body{
+    margin: 0;
+}
+
+.nav-bar-container{
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-bar-container > div{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-bar-container p, .nav-bar-container a{
+    margin: 0px 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+}
+
+.nav-bar-container a{
+    text-decoration: none;
+}
+
+@media (max-width: 593px) {
+    .nav-bar-container p, .nav-bar-container a{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    .nav-bar-container .display-none{
+        display: none;
+    }
+}
+
+#header{
+    padding-top: 210px;
+    text-align: center;
+    background-color: #3B9CBF;
+}
+
+.top-container > h2{
+    margin-bottom: 0;
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4rem;
+}
+
+.top-container > p{
+    margin-bottom: 100px;
+    color: #332F2A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 593px) {
+    #header{
+        padding-top: 80px;
+    }
+
+    .top-container > h2{
+        font-size: 3rem;
+    }
+    
+    .top-container > p{
+        font-size: 1.3rem;
+    }
+    .top-container{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .left-engineering{
+        height: 100px;
+        text-align: center;
+    }
+    .right-engineering{
+        display: none;
+    }
+}
+
+@media (min-width: 594px) and (max-width: 939px){
+    .left-engineering{
+        height: 150px;
+        position: absolute;
+        left: 20px;
+        top: 100px;
+    }
+    .right-engineering{
+        height: 200px;
+        position: absolute;
+        right: 20px;
+        top: 450px;
+    }
+}
+
+@media (min-width: 940px) {
+    .left-engineering{
+        height: 200px;
+        position: absolute;
+        left: 40px;
+        top: 100px;
+    }
+    
+    .right-engineering{
+        height: 300px;
+        position: absolute;
+        right: 40px;
+        top: 350px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .left-engineering{
+        height: 200px;
+        position: absolute;
+        left: 40px;
+        top: 100px;
+    }
+    .right-engineering{
+        height: 300px;
+        position: absolute;
+        right: 100px;
+        top: 350px;
+    }
+}
+
+#profile{
+    text-align: center;
+    margin: 70px 0;
+}
+
+.profile-container{
+    display: inline-block;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    height: 200px; 
+}
+
+#profile h3{
+    margin: 28px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+
+.profile-container > p{
+    margin: 0 auto 30px auto; 
+    max-width: 550px;
+    font-family: "Merriweather", serif;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.three-dots{
+    width: 2.2%;
+    height: 2.2%;
+    margin-top: auto;
+    min-width: 15px;
+}
+
+.front-end-images{
+    margin: 0 15px;
+    height: 5.5%;
+    width: 5.5%;
+    min-width: 50px;
+}
+
+.front-end-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 1060px) {
+    .profile-picture{
+        height: 180px; 
+    }
+    #profile h3{
+        font-size: 1.5rem;
+    }
+    
+    #profile p{
+        margin: 0 25% 28px 25%;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    
+    .front-end-images{
+        margin: 0 10px;
+    }
+}
+
+.bold-hr{
+    max-width: 50%;
+    border: 1px solid black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#projects{
+    background-color: rgb(248, 249, 250);
+    padding: 70px 0;
+}
+
+.projects-container{
+    display: flex;
+    max-width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.projects-container  h3{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+
+.projects-container a{
+    font-family: "Merriweather", serif;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.projects-container > img{
+    width: 70%;
+    margin: 0 auto;
+    min-width: 200px;
+}
+
+@media (max-width: 1700px) {
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    
+    .projects-container  h3{
+        font-size: 1.7rem;
+    }
+    
+    .projects-container  a{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .projects-container  h3{
+        font-size: 1.5rem;
+    }
+    
+    .projects-container  a{
+        font-size: 1rem;
+    }
+}
+
+.CV-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+#CV a > img{
+    width: 60%;
+    min-width: 120px;
+    margin: 0 auto;
+}
+
+.english-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+    position: relative;
+}
+.portuguese-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.eng-flag{
+    width: 15%;
+    position: absolute; 
+    transform: translate(-200%, -340%); 
+    min-width: 30px;
+}
+
+.port-flag{
+    width: 15%;
+    position: absolute; 
+    transform: translate(-200%, -320%); 
+    min-width: 30px;
+}
+
+.CV-language{
+    position: absolute; 
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+@media (max-width: 1060px) {
+    .CV-container  a{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .CV-container  a{
+        font-size: 0.8rem;
+    }
+}
+
+#footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+}
+
+.footer-hr{
+    max-width: 70%;
+    border: 0.2px solid white;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#footer p{
+    margin: 0;
+    padding: 30px;
+}
+
+#footer a{
+    font-family: "Montserrat", sans-serif;
+    margin: 0 30px;
+    
+}
+
+@media (max-width: 600px) {
+    #footer{
+        font-size: 0.8rem;
+    }
+       
+    #footer p{
+        margin: 0;
+        padding: 30px;
+    }
+    
+    #footer a{
+        font-family: "Montserrat", sans-serif;
+        margin: 0 30px;
+        
+    }
+}
+
+@media (max-width: 310px) {
+    .footer-container .display-none{
+        display: none;
+    }
+
+    .footer-container{
+        padding-top: 30px;
+    }
+
+    #footer{
+        font-size: 0.8rem;
+    }
+       
+    #footer p{
+        margin: 0;
+        padding: 30px;
+    }
+    
+    #footer a{
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 30px;
+        display: block;
+    }
+}
+
+a{
+    color: inherit;
+    text-align: center;
+}
+
+
+/*------------------------------------CVs------------------------------------*/
+
+@media(max-width: 600px){
+    .CV-lang-display-none{
+        display: none;
+    }
+}
+
+.CV-flag{
+    margin-left: 10px;
+}
+
+h1{
+    margin: 35px 0 30px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+#information h2{
+    color: #E23333;
+    font-family: "Montserrat", sans-serif;
+}
+
+#information h3{
+    line-height: 30px;
+}
+
+#information > div{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto 70px auto;
+}
+
+.about-me{
+    order: -5;
+}
+
+.working-exp{
+    grid-row: span 2;
+    order: -4;
+}
+
+.professional-goal{
+    order: -3;
+}
+
+.education{
+    order: -1;
+}
+
+.soft-skills{
+    order: -2;
+}
+
+#information p{
+    line-height: 35px;
+    max-width: 460px;
+    font-family: "Merriweather", serif;
+}
+
+#information ul{
+    line-height: 30px;
+    max-width: 460px;
+    font-family: "Merriweather", serif;
+}
+
+.between-info{
+    max-width: 50%;
+    border: 1px solid black;
+    margin: 70px auto 0 0;
+}
+
+@media(max-width: 1350px){
+
+    #information > div{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .about-me{
+        order: 0;
+    }
+    
+    .working-exp{
+        order: 0;
+    }
+    
+    .professional-goal{
+        order: 0;
+    }
+    
+    .education{
+        order: 0;
+    }
+    
+    .soft-skills{
+        order: 0;
+    }
+
+    #information p{
+        max-width: none;
+    }
+    
+    #information ul{
+        max-width: none;
+    }
+
+    .between-info{
+        max-width: 60%;
+        margin: 70px auto 0 auto;
+    }
+    
+    .working-exp > ul{
+        padding-left: 0px;
+    }
+
+    .working-exp > ul > ul{
+        padding-left: 25px;
+    }
+
+    .education ul{
+        padding-left: 20px;
+    }
+}
+
+
+/*------------------------------------PROJECTs------------------------------------*/
+
+#projects-page > div{
+    margin: 80px 0;
+}
+
+#projects-page  h2{
+    width: 50%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+.img-desc-container{
+    display: flex;
+    width: 50%;
+    margin: 20px auto;
+    gap: 30px;
+}
+
+.project-img{
+    height: 200px;
+    width: 320px;
+    border: 1px solid black;
+    object-fit: contain;
+}
+
+.project-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-text *{
+    text-align: left;
+}
+
+.project-text ul{
+    font-family: "Merriweather", serif;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.project-text a{
+    font-family: "Merriweather", serif;
+    font-size: 1.2rem;
+    color: #3B9CBF;
+}
+
+.project-text span{
+    color:orange;
+}
+
+@media (max-width: 1510px) {
+    .img-desc-container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 20px auto;
+        gap: 30px;
+    }
+    .project-text a{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1060px) {
+    #projects-page  h2{
+        font-size: 1.2rem;
+    }
+    
+    .project-text  a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-img{
+        height: 150px;
+        width: 240px;
+        align-self: center;
+    }
+    #projects-page  h2{
+        text-align: center;
+    }
+}
